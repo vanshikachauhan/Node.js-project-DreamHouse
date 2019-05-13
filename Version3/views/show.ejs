@@ -1,0 +1,11 @@
+<% include partials/header %>
+<h1>show page !!!!!!!!!!!!</h1>
+<% house.name %>
+<img src="<%= house.image %>">
+<p><%= house.description %></p>
+<% house.comments.forEach(function(comment) { %>
+  <p><strong><%= comment.author %></strong> - <%= comment.text %></p>
+<% }) %>
+
+
+<% include partials/footer %>
