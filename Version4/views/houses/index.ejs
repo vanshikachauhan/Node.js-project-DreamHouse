@@ -1,0 +1,31 @@
+<% include partials/header %>
+<div class="container">
+	<header class="jumbotron">
+		<h1>Dream House Page</h1>
+		 <p>
+		    View the best houses picked from all over the world...........
+		 </p>
+		 <a class="btn btn-lg btn-primary" href="houses/new">Add new DreamHouses</a>
+	</header>
+
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+    <% houses.forEach(function(house){ %>
+     <div class="col-md-3 col-sm-6">
+       <div class="thumbnail">
+         <img src="<%= house.image %>">
+         <div class="caption">
+           <h4><%= house.name %></h4>
+         </div>
+         <p>
+           <a href="/houses/<%= house._id %>" class="btn btn-primary">More info</a>
+         </p>
+       </div>
+     </div>
+    <% }); %>
+
+     </div>
+
+
+</div>
+</div>
+<% include partials/footer %>
