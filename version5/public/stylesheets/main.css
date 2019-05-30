@@ -1,0 +1,14 @@
+body {
+	background: yellow;
+}
+
+.thumbnail img {
+	width: 100%;
+}
+.thumbnail {
+	padding: 0;
+}
+
+.thumbnail .captain-full {
+	padding: 9px;
+}
